@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Images/Logo.png" type="images/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Cường Khoa Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/Images/Logo.png" alt="" />
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-box" placeholder="Tìm kiếm..." />
+        <button class="search-box-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+      <div class="login">
+        <a href="#" class="login-btn">ĐĂNG KÝ<i class="bx bxs-user"></i></a>
+      </div>
+      <div class="cart">
+        <i class="bx bxs-cart-alt"></i>
+        <span>0</span>
+      </div>
+    </header>
+    <div id="wrapper">
+      <div id="header">
+        <nav class="container">
+          <ul id="main-menu">
+            <li><a href="/cuongkhoashop.html">TRANG CHỦ</a></li>
+            <li>
+              <a href="/thoitrangnam.html"
+                >THỜI TRANG NAM <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo khoác & Áo len</a></li>
+                <li><a href="">Quần tây</a></li>
+                <li><a href="">Quần Jean</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/thoitrangnu.html"
+                >THỜI TRANG NỮ <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo khoác</a></li>
+                <li><a href="">Váy</a></li>
+                <li><a href="">Đầm</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/phukien.html"
+                >PHỤ KIỆN <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Mũ thời trang</a></li>
+                <li><a href="">Dép thời trang</a></li>
+                <li><a href="">Giày thời trang</a></li>
+              </ul>
+            </li>
+            <li><a href="/lienhe.html">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="dangky">
+      <h3 align="center">ĐĂNG KÝ THÀNH VIÊN</h3>
+      <form
+        action=""
+        name="dangky"
+        method="post"
+        onSubmit="return kiemtra()">
+        <table border="0" align="center" width="500">
+          <tr>
+            <td width="150">Ho và tên:(*)</td>
+            <td width="350"><input type="text" name="txthoten" /></td>
+          </tr>
+          <tr>
+            <td>Giới tính:</td>
+            <td>
+              <select name="gt" size="1">
+                <option value="0">Nam</option>
+                <option value="1">Nữ</option>
+              </select>
+            </td></tr>
+          <tr>
+            <td>Ngày sinh:(*)</td>
+            <td>
+              Ngày:<select name="ngay">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value 19>19</option>
+                <option value="20">20</option>
+                <option value-21>21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+
+              Tháng:<select name="thang">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+              Năm:<input type="text" size="3" name="nam" /></td>
+            </tr>
+          <tr>
+            <td>Email(*)</td>
+            <td><input name="em" type="text" maxlength="40" size="20" /></td>
+          </tr>
+          <tr>
+            <td>Tên đăng nhập:(*)</td>
+            <td><input type="text" name="tdn" size="20" /></td>
+          </tr>
+          <tr>
+            <td>Mật khẩu:(*)</td>
+            <td><input type="password" name="mk" size="20" /></td>
+          </tr>
+          <tr>
+            <td>Nhập lại mật khẩu:(*)</td>
+            <td><input type="password" name="nlmk" size="20" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Đăng ký" /><input style="margin-left: 18px;" type=reset value="Bỏ qua"/>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <footer>
+      <div class="thongtin">
+        <h4>THÔNG TIN</h4>
+        <p>Shop thời trang Cường Khoa Shop</p>
+        <p>61 Đoàn Hồng Phước, Q.Tân Phú</p>
+        <p>0979413607</p>
+      </div>
+
+      <div class="lienhe">
+        <h4>LIÊN HỆ</h4>
+        <label for="">Email:</label>
+        <input type="email" name="" id="" />
+        <button>SEND</button>
+        <br />
+        <img src="/Images/facebook.png" alt="" />
+        <img src="/Images/g.png" alt="" />
+        <img src="/Images/twitter.png" alt="" />
+      </div>
+
+      <div class="design">
+        <p>Design by Văn Khoa - &#169; Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+  <script src="/main.js"></script>
+</html>

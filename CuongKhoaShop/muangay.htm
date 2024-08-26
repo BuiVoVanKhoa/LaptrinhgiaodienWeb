@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Images/Logo.png" type="images/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Cường Khoa Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/Images/Logo.png" alt="" />
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-box" placeholder="Tìm kiếm..." />
+        <button class="search-box-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+      <div class="login">
+        <a href="#" class="login-btn">ĐĂNG KÝ<i class="bx bxs-user"></i></a>
+      </div>
+      <div class="cart">
+        <i class="bx bxs-cart-alt"></i>
+        <span>0</span><sup>đ</sup>
+      </div>
+    </header>
+    <div id="wrapper">
+      <div id="header">
+        <nav class="container">
+          <ul id="main-menu">
+            <li><a href="/cuongkhoashop.html">TRANG CHỦ</a></li>
+            <li>
+              <a href="/thoitrangnam.html"
+                >THỜI TRANG NAM <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo khoác & Áo len</a></li>
+                <li><a href="">Quần tây</a></li>
+                <li><a href="">Quần Jean</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/thoitrangnu.html"
+                >THỜI TRANG NỮ <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo khoác</a></li>
+                <li><a href="">Váy</a></li>
+                <li><a href="">Đầm</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/phukien.html"
+                >PHỤ KIỆN <i class="bx bxs-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="">Mũ thời trang</a></li>
+                <li><a href="">Dép thời trang</a></li>
+                <li><a href="">Giày thời trang</a></li>
+              </ul>
+            </li>
+            <li><a href="/lienhe.html">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="trangmuangay">
+      <div class="sanpham">
+        <img src="/Images/somi.jpg" alt="" />
+        <p>Áo sơ mi nam</p>
+        <h4><span>100.000</span><sup>đ</sup></h4>
+        <button>Mua ngay</button>
+      </div>
+      <div class="sanpham">
+        <h2>Giới thiệu về sản phẩm này</h2>
+        <h3>Chi tiết</h3>
+        <p>Hướng dẫn giặt: Máy có thể giặt được</p>
+        <p>Phong cách: Sang trọng, thanh lịch</p>
+        <p>Họa tiết: Đơn giản</p>
+        <p>Chất liệu: Lụa</p>
+        <p>Size: S, M, L, XL</p>
+      </div>
+
+      <div class="formthanhtoan">
+        <h2>Thanh Toán</h2>
+        <form id="checkout-form">
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="address">Địa chỉ giao hàng:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <button type="submit">Mua ngay</button>
+        </form>
+        <div id="confirmation-message" class="hidden">
+          Thanh toán thành công!
+        </div>
+      </div>
+    </div>
+
+    <div class="giohang">
+      <i class="bx bx-x"></i>
+      <h2>Giỏ hàng</h2>
+      <form action="">
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Chọn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+            <td style="display: flex; align-items: center;"><img style="width: 100px;" src="/Images/khoac_nu2.jpg" alt="">Áo khoác nữ</td>
+            <td><h4>200.000 <span>VND</span></h4></td>
+            <td><input style="width: 40px; height: 30px; outline: none;" type="number" name="" id="" value="1" min="1"></td>
+            <td style="cursor: pointer;">Xóa</td>
+          </tr>
+          <tr>
+            <td style="display: flex; align-items: center;"><img style="width: 100px;" src="/Images/somi.jpg" alt="">Áo sơ mi nam</td>
+            <td><h4>200.000 <span>VND</span></h4></td>
+            <td><input style="width: 40px; height: 30px; outline: none;" type="number" name="" id="" value="1" min="1"></td>
+            <td style="cursor: pointer;">Xóa</td>
+          </tr> -->
+          </tbody>
+        </table>
+      </form>
+      <div
+        style="display: flex; justify-content: space-between"
+        class="price-total"
+      >
+        <p style="font-weight: bold">Thành tiền: <span>0</span><sup>đ</sup></p>
+        <button class="thanhtoan">Thanh toán</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="thongtin">
+        <h4>THÔNG TIN</h4>
+        <p>Shop thời trang Cường Khoa Shop</p>
+        <p>61 Đoàn Hồng Phước, Q.Tân Phú</p>
+        <p>0979413607</p>
+      </div>
+
+      <div class="lienhe">
+        <h4>LIÊN HỆ</h4>
+        <label for="">Email:</label>
+        <input type="email" name="" id="" />
+        <button>SEND</button>
+        <br />
+        <img src="/Images/facebook.png" alt="" />
+        <img src="/Images/g.png" alt="" />
+        <img src="/Images/twitter.png" alt="" />
+      </div>
+
+      <div class="design">
+        <p>Design by Văn Khoa - &#169; Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+  <script src="/main.js"></script>
+</html>

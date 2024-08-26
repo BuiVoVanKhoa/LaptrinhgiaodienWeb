@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>D & M - Bán buôn lẻ và Đồng phục thời trang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d4d0d0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .logo img{
+            width: 100%;
+            display: block;
+        }
+        nav {
+            background-color: black;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+            display: inline-block;
+        }
+        .Side3{
+            display: flex;
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            /* display: flex; */
+        }
+        .sidebar h3 {
+            color: blue;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .sidebar li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            color: blue;
+        }
+        .sidebar li:before {
+            content: "•";
+            color: #4a90e2;
+            width: 1em;
+            margin-left: -
+            1em;
+        }
+
+        .main-content {
+            float: right;
+            width: 78%;
+            padding: 20px;
+        }
+        .product {
+            width: 30%;
+            float: left;
+            margin: 1.66%;
+            text-align: center;
+        }
+        .product img {
+            max-width: 60%;
+        }
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+        .btn {
+            font-weight: bold;
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .banner {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: block;
+        }
+
+        footer nav{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="/Images/Banner_ttin.jpg"></div>
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="">Giới thiệu</a>
+                <a href="#">Dịch vụ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Liên hệ</a>
+            </nav>
+        </header>
+        
+        <div class="Side3">
+            <div class="sidebar">
+                <div>
+                    <h3>DANH MỤC SẢN PHẨM</h3>
+                    <hr>
+                    <ul>
+                        <li> Áo kiểu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="/Images/kich-thuoc-banner-website-1.png" alt="Web Design Banner">
+            </div>
+        </div>
+        
+        <div class="main-content">          
+            <h2>SẢN PHẨM NỔI BẬT</h2>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo trắng basic</h3>
+                <p class="price">120.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo len đỏ</h3>
+                <p class="price">150.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo len xanh</h3>
+                <p class="price">150.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            
+            <h2>SẢN PHẨM MỚI NHẤT</h2>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo kiểu mới</h3>
+                <p class="price">180.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo thời trang</h3>
+                <p class="price">200.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+            <div class="product">
+                <img src="/Images/23f919ce91b6e6ce704e2a7aac7b887c.jpg" alt="Áo trắng">
+                <h3>Áo phong cách</h3>
+                <p class="price">220.000 đ</p>
+                <a href="#" class="btn">Mua ngay</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 D & M Fashion. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

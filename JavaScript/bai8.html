@@ -1,0 +1,114 @@
+<html>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<head>
+<Script language=JavaScript>
+function kiemtra(){
+    var ht=window.document.dangky.txthoten.value;
+    var na=window.document.dangky.nam.value;
+    var email=window.document.dangky.em.value;
+    var tdn=window.document.dangky.tdn.value;
+    var mk=window.document.dangky.mk.value;
+    var nlmk=window.document.dangky.nlmk.value;
+    if(ht.length==0){
+        alert("vui lòng nhập họ tên");
+        window.document.dangky.txthoten.focus();
+        return false;
+    }
+    if(na.length==0){
+        alert("hãy điền năm sinh");
+        window.document.dangky.nam.focus();
+        return false;
+    }
+    if(isNaN(na)==true){
+        alert("Đây không phải là số");
+        window.document.dangky.nam.value="";
+        document.dangky.nam.focus();
+        return false;
+    }
+    re=/\w+@\w+\.\w+/;
+    if (email==""){
+        alert("Bạn chưa nhập email")
+        window.document.dangky.em.value="";
+        document.dangky.em.focus();
+        return false
+    }
+    else if(re.test(email)==false){
+    alert("Email không đúng định dạng!")
+    document.dangky.em.focus();
+    return false
+}
+if(tdn.length==0){
+    alert("hãy điền tên đăng nhập");
+    window.document.dangky.tdn.focus();
+    return false;
+}
+if(mk.length==0){
+    alert("hãy nhập mật khẩu");
+    window.document.dangky.mk.focus();
+    return false;
+}
+if(nlmk.length==0) {
+    alert("hãy nhập lại mật khẩu");
+    window.document.dangky.nlmk.focus();
+    return false;
+}
+if(mk != nlmk){
+    alert("mật khẩu và nhập lại mật khẩu ko trùng nhau");
+    window.document.dangky.nlmk.focus();
+    return false;
+}
+
+alert("Đăng ký thành công! Chúc mừng bạn");
+return true;
+}
+</Script>
+</head>
+<Body>
+<h3 Align=Center> ĐĂNG KÝ THÀNH VIÊN </H3>
+<form action=dangkythanhvien.htm name=dangky method=post onSubmit="return kiemtra()">
+<table border=0 align=center width="500">
+<tr><td width="150">Họ và Tên:(*)</td><td width="350"><input type=text name="txthoten" >
+</td></tr>
+<tr><td >Giới Tính :</td><td >
+<select name=gt size="1">
+<option value=0>Nam
+<option value=1>Nữ
+</select></td></tr>
+<tr><td>Ngày sinh :(*)</td>
+<td >Ngày:<select name=ngay>
+<option value=1>01<option value=2>02
+<option value=3>03<option value=4>04
+<option value=5>05<option value=6>06
+<option value=7>07<option value=8>08
+<option value=9>09<option value=10>10
+<option value=11>11<option value=12>12
+<option value=13>13<option value=14>14
+<option value=15>15<option value=16>16
+<option value=17>17<option value=18>18
+<option value=19>19<option value=20>20
+<option value=21>21<option value=22>22
+<option value=23>23<option value=24>24
+<option value=25>25<option value=26>26
+<option value=27>27<option value=28>28
+<option value=29>29<option value=30>30
+<option value=31>31</select>
+Tháng:<select name=thang>
+<option value=1>01<option value=2>02
+<option value=3>03<option value=4>04
+<option value=5>05<option value=6>06
+<option value=7>07<option value=8>08
+<option value=9>09<option value=10>10
+<option value=11>11<option value=12>12</select>
+Năm:<input type=text size="3" name="nam"></td>
+</tr>
+<tr><td>Email (*)</td><td><input name="em" type="text" maxlength="40" size=20></td></tr>
+<tr><td>Tên Đăng Nhập :(*)</td><td><input type=text name=tdn size=20></td></tr>
+<tr><td>Mật khẩu :(*)</td><td><input type=password name=mk size=20 ></td></tr>
+<tr><td>Nhập lại Mật khẩu :(*)</td><td><input type=password name=nlmk size=20 ></td></tr>
+<tr><td></td><td ><input type=submit value="Đăng ký"><input type=reset value="Bỏ qua"></td></tr>
+</table></form>
+</body>
+</html>
+</Script>
+</head>
+</html>

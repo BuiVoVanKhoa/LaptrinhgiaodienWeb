@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: white;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 20%;
+  max-height: 99px;
+}
+
+header .search-box {
+  height: 30px;
+  font-size: 20px;
+  margin-left: 4%;
+  width: 75%;
+}
+
+header .search-box button {
+  font-size: 20px;
+  background-color: rgb(222, 131, 12);
+  border: none;
+  width: 34px;
+  height: 31px;
+  border-radius: 2px;
+}
+
+header .login {
+  margin-left: -8%;
+}
+
+header .login a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+header .cart {
+  white-space: nowrap;
+}
+
+header .cart i {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+header .cart span {
+  font-size: 18px;
+}
+
+/* Thanh menu */
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+#header {
+  background-color: rgb(205, 219, 212);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+#main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-menu li {
+  position: relative;
+}
+
+#main-menu li a {
+  color: rgb(86, 62, 62);
+  font-weight: bold;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+#main-menu .sub-menu li a {
+  color: rgb(86, 62, 62);
+  font-weight: normal;
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+#main-menu ul.sub-menu {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  width: 180px;
+  display: none;
+}
+
+#main-menu li:hover > ul.sub-menu {
+  display: block;
+}
+
+#main-menu .danhmuc ul.sub-menu li:hover > a {
+  border-bottom: 1px solid rgb(155, 103, 25);
+}
+#main-menu .sub-menu li:hover > a {
+  background-color: rgb(33, 85, 209);
+  color: white;
+  border-radius: 16px;
+}
+
+#main-menu li a:hover {
+  color: black;
+}
+/* Banner trang chủ */
+.banner img {
+  width: 100%;
+}
+/* Các sản phẩm */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 10%;
+}
+
+section a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section a:hover {
+  color: rgb(10, 17, 217);
+}
+
+img {
+  width: 100%;
+}
+
+.sanpham p {
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.vungchuasanpham {
+  background: rgb(129, 142, 141);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.sanpham {
+  background: white;
+  padding: 10px;
+  width: 30%;
+}
+
+.sanpham h4 {
+  color: red;
+  margin: 10px;
+}
+
+.sanpham .themgiohang {
+  background-color: rgb(19, 141, 114);
+}
+.sanpham .themgiohang:hover {
+  background-color: rgb(13, 89, 72);
+}
+.sanpham button {
+  background: rgb(237, 81, 81);
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sanpham button a{
+  text-decoration: none;
+  color: white;
+}
+
+.sanpham button:hover {
+  background: rgb(188, 31, 31);
+}
+/* Footer chân trang */
+footer {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer h4,
+p {
+  color: rgb(0, 0, 0);
+  margin: 20px 0px;
+}
+
+.thongtin,
+.lienhe {
+  padding: 0px 40px;
+  flex: auto;
+}
+
+.lienhe img {
+  margin-top: 30px;
+  width: 34px;
+}
+
+.design {
+  flex: 100%;
+}
+
+.design p {
+  background: rgb(52, 52, 185);
+  color: white;
+  padding: 14px;
+  text-align: center;
+}
+
+/* Liên hệ */
+.bando {
+  margin: 2% 3.6%;
+}
+
+.bklhe {
+  background-color: black;
+}
+
+.contact {
+  margin: 30px 50px;
+  width: auto;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.khungcontact .anhdaidien,
+.khungcontact .formlienhe {
+  position: relative;
+}
+
+.khungcontact {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.khungcontact::before {
+  content: "";
+  width: 120%;
+  height: 50%;
+  position: absolute;
+  background-image: linear-gradient(to right, red, yellow);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: contact 3s infinite linear;
+}
+
+@keyframes contact {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.anhdaidien {
+  background: rgb(23, 163, 213);
+  padding: 0% 10%;
+  width: 40%;
+  text-align: center;
+}
+
+.anhdaidien img {
+  margin: 14px;
+  width: 72%;
+}
+
+.anhdaidien a i {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  margin-top: -12px;
+  margin-bottom: 7px;
+}
+
+.anhdaidien p {
+  color: rgb(86, 82, 82);
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.anhdaidien a i:hover {
+  color: rgb(255, 255, 255);
+}
+.formlienhe {
+  background-color: rgb(174, 193, 193);
+  width: 60%;
+  text-align: left;
+  padding-left: 6%;
+}
+
+.formlienhe .menu-lienhe {
+  margin: 14px;
+}
+
+.formlienhe .menu-lienhe tr td {
+  padding: 12px 2px;
+}
+
+/* Giỏ hàng */
+.giohang{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.giohang i{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 38px;
+  margin-left: -101%;
+  margin-top: -3%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.giohang h2{
+  margin-bottom: 20px;
+}
+
+.giohang table{
+  width: 100%;
+}
+
+.giohang table thead tr th:first-child{
+  text-align: left;
+}
+
+.giohang table tr td{
+  border-bottom: 1px solid silver;
+  padding: 12px 0px;
+}
+
+.giohang table thead tr th:last-child{
+  text-align: right;
+}
+.giohang table tbody tr td:last-child{
+  text-align: right;
+}
+
+.giohang button{
+    background: rgb(4, 4, 4);
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.giohang button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+/* Chỉnh giao diện giỏ hàng*/
+.giohang{
+  position: fixed;
+  height: 100vh;
+  width: 480px;
+  right: -100%;
+  top: 104px;
+  background-color: rgb(173, 153, 153);
+  padding: 12px 20px;
+  overflow: scroll;
+  transition: all 0.3s ease;
+}
+
+/* Đăng nhập */
+.dangky{
+  margin: auto;
+  background-color: rgb(107, 186, 255);
+  height: 350px;
+}
+
+.dangky form{
+  display: flex;
+  margin-left: 38%;
+  padding: 12px;
+}
+
+.dangky form tr td{
+  margin-bottom: 120px;
+}
+
+/* Thanh toán */
+.trangmuangay {
+  background: rgb(129, 142, 141);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formthanhtoan {
+  background-color: rgb(255, 60, 60);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.formthanhtoan h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.formthanhtoan form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formthanhtoan label {
+  margin: 10px 0 5px;
+}
+
+.formthanhtoan input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formthanhtoan button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.formthanhtoan button:hover {
+  background-color: #45a049;
+}
+
+.formthanhtoan .hidden {
+  display: none;
+}
+
+.formthanhtoan #confirmation-message {
+  color: rgb(1, 1, 1);
+  text-align: center;
+  margin-top: 20px;
+}
